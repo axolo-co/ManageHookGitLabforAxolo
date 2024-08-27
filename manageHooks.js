@@ -80,7 +80,7 @@ async function createGroupHook(groupId) {
 // New function to check hook validity
 async function checkHookValidity(hook) {
   const response = await axios.get(
-    `${GITLAB_API_URL}/projects/${hook.project_id}/hooks/${hook.id}`,
+    `${GITLAB_API_URL}/groups/${hook.project_id}/hooks/${hook.id}`,
     {
       headers: {
         'Private-Token': ACCESS_TOKEN,
