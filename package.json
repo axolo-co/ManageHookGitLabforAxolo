@@ -1,0 +1,14 @@
+{
+  "name": "axolo-gitlab-webhook-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Keep Axolo GitLab group and project webhooks active.",
+  "scripts": {
+    "group": "node manageHooks.js",
+    "projects": "node manageProjectHooks.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
